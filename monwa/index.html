@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+      
+      <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="15"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="text-reset me-3" href="/cart-page.html">
+        <i class="fas fa-shopping-cart"></i>
+      
+      <!-- Notifications -->
+      <div class="dropdown">
+        <a
+          class="text-reset me-3 dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close text-success">&times;</span>
+    <h1 class="text-center text-success">Welcome</h1>
+    <br>
+    <form>
+      <!-- 2 column grid layout with text inputs for the first and last names -->
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form3Example1" class="form-control" />
+            <label class="form-label" for="form3Example1">First name</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">Last name</label>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form3Example3" class="form-control" />
+        <label class="form-label" for="form3Example3">Email address</label>
+      </div>
+    
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="form3Example4" class="form-control" />
+        <label class="form-label" for="form3Example4">Password</label>
+      </div>
+    
+      <!-- Checkbox -->
+      <div class="form-check d-flex justify-content-center mb-4">
+        <input style="border: none;" class="form-check-input bg-success me-2" type="checkbox" value="" id="form2Example33" checked />
+        <label class="form-check-label" for="form2Example33">
+          Subscribe to our newsletter
+        </label>
+      </div>
+    
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-success btn-block mb-4">Sign up</button>
+    
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>or sign up with:</p>
+        <button type="button" class="btn btn-success btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+    
+        <button type="button" class="btn btn-success btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+    
+        <button type="button" class="btn btn-success btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+    
+        <button type="button" class="btn btn-success btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<div class="bg-image">
+  <img width="1535px" height="740px" src="/img/background.png">
+    
+  
+  <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="container d-flex align-items-center text-center h-100">
+      <div id="wording">
+        <h1 class="mb-5">Gamers games!!</h1>
+        <p>
+          In the world of gaming, players are transported to fantastical realms where they can unleash their creativity and skills. Whether it's exploring vast open-world environments, engaging in intense first-person shooter battles, or solving intricate puzzles, gaming offers a diverse range of experiences for players of all ages. With ever-evolving technology, stunning graphics, and immersive sound effects, modern games provide an unprecedented level of realism and immersion.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <section style="margin-top: 80px;" class="text-center">
+          <h4 class="mb-5"><strong>Our Latest Games</strong></h4>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                  width="100%"
+                    src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQI869bbduNetcEJWpM_QFTm79PuLKhWoWGaRiMQN7lAmYu-RE0"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Resident Evil 4</h5>
+                  <p class="card-text">
+                    Resident Evil 4 is a 2023 survival horror game developed and published by Capcom. It is a remake of the 2005 game Resident Evil 4. Players control the US agent Leon S. Kennedy, who must save Ashley Graham, the daughter of the United States president, from the mysterious Los Illuminados cult.
+                  </p>
+                  <a href="#!" class="btn btn-success"><i class="fa fa-cart-plus" aria-hidden="true">&nbsp;&nbsp;Add to cart</i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="height: 543px;" class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="https://s25.q4cdn.com/103200307/files/doc_multimedia/AJ_Logo_Primary_RGB_Black.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Star Wars Jedi: Survivor</h5>
+                  <p class="card-text">
+                   Star Wars Jedi: Survivor is an action-adventure game developed by Respawn Entertainment and published by Electronic Arts.
+                  </p>
+                  <a style="margin-top: 60px;" href="#!" class="btn btn-success"><i class="fa fa-cart-plus" aria-hidden="true">&nbsp;&nbsp;Add to cart</i></a>
+                </div>
+              </div>
+            </div>
+
+            <div  class="col-lg-4 col-md-6 mb-4">
+              <div style="height: 542px;" class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="https://zelda.com/tears-of-the-kingdom/images/share-fb.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">The Legend of Zelda: Tears of the Kingdom</h5>
+                  <p class="card-text">
+                    The Legend of Zelda: Tears of the Kingdom is a 2023 action-adventure game developed and published by Nintendo for the Nintendo Switch.
+                  </p>
+                  <a style="margin-top: 87px;" href="#!" class="btn btn-success"><i class="fa fa-cart-plus" aria-hidden="true">&nbsp;&nbsp;Add to cart</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+</div>
+
+
+
+
+<div class="container">
+  <section style="margin-top: 10px;" class="text-center">
+          
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div style="height: 543px;" class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                  width="100%"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtoWkasKVBmGeRRnyBOg7pGYhTe4ecy58SAJoC8BwC-Y3IvUhlOiL0WXd5DTBXmqsWJs&usqp=CAU"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div style="height: 260px;" class="card-body">
+                  <h5 class="card-title">Dead Space</h5>
+                  <p class="card-text">
+                    Dead Space is a 2023 survival horror game developed by Motive Studio and published by Electronic Arts.
+                  </p>
+                  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                  <a style="margin-top: 100px;" href="#!" class="btn btn-success"><i class="fa fa-cart-plus" aria-hidden="true">&nbsp;&nbsp;Add to cart</i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div style="height: 543px;" class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/fr/0/0d/Street_Fighter_6_Logo.png"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Street Fighter 6</h5>
+                  <p class="card-text">
+                    Street Fighter 6 is a 2023 fighting game developed and published by Capcom. Announced in February 2022, it is the seventh main entry in the Street Fighter franchise, and was released for PlayStation 4, 
+                  </p>
+                  <a style="margin-top: 60px;" href="#!" class="btn btn-success"><i class="fa fa-cart-plus" aria-hidden="true">&nbsp;&nbsp;Add to cart</i></a>
+                </div>
+              </div>
+            </div>
+
+            <div  class="col-lg-4 col-md-6 mb-4">
+              <div style="height: 542px;" class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                  height="300px"
+                    src="https://image.fresherslive.com/latestnews/2023/05/has-the-diablo-4-beta-extended-64747f2d8d8f19205371-900.webp"
+                    class="img-fluid"
+                  />
+                  <a href="#myBtn">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div style="margin-top: -80px;" class="card-body">
+                  <h5 style="position: relative; top: 72px;" class="card-title">Diablo IV</h5>
+                  <p style="position: relative; top: 72px;" class="card-text">
+                    Diablo IV is an action role-playing game developed and published by Blizzard Entertainment, and is the fourth main installment in the Diablo series. The game was announced at BlizzCon 2019 and released on June 5, 2023, with early access starting on June 1. Public betas were released in March 2023.
+                  </p>
+                  <a style="margin-top: 87px;" href="#!" class="btn btn-success"><i class="fa fa-cart-plus" aria-hidden="true">&nbsp;&nbsp;Add to cart</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!--Section: Content-->
+
+</div>
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+   <script src="/main.js"></script> 
+</body>
+</html>
